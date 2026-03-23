@@ -1,0 +1,47 @@
+.admission-card {
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Typography */
+.description {
+    color: #5a7184;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.social-proof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.avatar-group {
+    display: flex;
+}
+
+.avatar-group img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-right: -15px; /* Overlap effect */
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.stats-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-text strong {
+    font-size: 1.1rem;
+    color: #1a202c;
+}
+
+.stats-text span {
+    font-size: 0.95rem;
+    color: #718096;
+}

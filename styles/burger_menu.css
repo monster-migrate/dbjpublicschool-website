@@ -1,0 +1,18 @@
+.bar {
+	width: 20px;
+	height: 2px;
+	background-color: #878787;
+	transition: all 0.3s ease;
+}
+
+#menuOpen.is-active .bar:nth-child(1) {
+	transform: translateY(9px) rotate(45deg);
+}
+
+#menuOpen.is-active .bar:nth-child(2) {
+	opacity: 0;
+}
+
+#menuOpen.is-active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}

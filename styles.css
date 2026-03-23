@@ -1,0 +1,47 @@
+:root {
+	--bg-color: #ffffff;
+	--text-color: #333333;
+	--accent-color: #007bff;
+	--primary-blue: #2563eb;
+	--text-dark: #0f172a;
+}
+
+[data-theme="dark"] {
+	--bg-color: #1a1a1a;
+	--text-color: #f4f4f4;
+	--accent-color: #00d4ff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f0f4f8;
+}
+button {
+	border: none;
+}
+.main-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0d1b3e; /* Deep navy */
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.main-description {
+    color: #64748b; /* Muted blue-grey */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.programs-section{
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}

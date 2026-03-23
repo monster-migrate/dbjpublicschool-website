@@ -1,0 +1,33 @@
+#image {
+    padding: 32px;
+}
+.card-container {
+    max-width: 450px; /* Adjust based on your design */
+    margin: 20px auto;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    transform: rotate(4deg);
+    border-radius: 30px; /* Match the rounded corners in your image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* The Image Section */
+.image-wrapper {
+    width: 100%;
+    /* aspect-ratio: 9 / 16; Optional: forces a vertical phone-like ratio */
+    overflow: hidden;
+    border-radius: 20px; /* Inner rounding */
+    background-color: #f7f9fc; /* Placeholder color */
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 400px; /* Ensures it doesn't collapse if empty */
+    
+    /* BEST PRACTICES FOR GLITCH-FREE VIEWING */
+    object-fit: cover;    /* Fills the area without stretching */
+    object-position: center; /* Keeps the subject centered */
+}

@@ -1,0 +1,39 @@
+.mobile-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #f9f9f9;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    row-gap: 1px;
+    height: 24px;
+    width: 30px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.mobile-overlay.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.overlay-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+

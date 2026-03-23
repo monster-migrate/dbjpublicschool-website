@@ -1,0 +1,58 @@
+.program-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 40px;
+    padding: 35px;
+    margin: 12px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Icon Styling */
+.icon-box {
+    background-color: #3b82f6;
+    /* Bright blue */
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.icon-box svg {
+    width: 35px;
+    height: 35px;
+}
+
+/* Card Content */
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Link Styling */
+.learn-more {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    margin-top: -2px;
+    /* Adjusting alignment of the bracket */
+}

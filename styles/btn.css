@@ -1,0 +1,34 @@
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+.btn {
+    padding: 18px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+    background-color: #1a66ff;
+    color: white;
+    box-shadow: 0 10px 20px rgba(26, 102, 255, 0.2);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #000;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}

@@ -1,0 +1,35 @@
+.stats-container {
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* Stack in 1 column on small screens */    
+    gap: 40px; 
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limits width on ultra-wide screens */
+    margin: 0 auto;
+}
+
+/* Desktop Styles (Screens wider than 768px) */
+@media (min-width: 768px) {
+    .stats-container {
+        grid-template-columns: repeat(4, 1fr); /* All 4 in one row */
+        gap: 20px;
+    }
+}
+
+/* Typography Styling */
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0d1b2a;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}

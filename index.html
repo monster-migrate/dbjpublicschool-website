@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Name</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/logo.css" />
+    <link rel="stylesheet" href="styles/navmenu.css" />
+    <link rel="stylesheet" href="styles/burger_menu.css" />
+    <link rel="stylesheet" href="styles/overlay_menu_links.css" />
+    <link rel="stylesheet" href="styles/close_btn.css" />
+    <link rel="stylesheet" href="styles/btn.css" />
+    <link rel="stylesheet" href="styles/hero_section.css" />
+    <link rel="stylesheet" href="styles/stats.css" />
+    <link rel="stylesheet" href="styles/image_card.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="School Logo" class="logo-icon" />
+        </div>
+
+        <button class="menu-toggle" id="menuOpen">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+      <div class="mobile-overlay" id="mobileMenu">
+        <ul class="nav-links">
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Student Life</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="btn btn-primary">Apply Now</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="admission-card">
+          <p class="description">
+            At Divya Jyoti Public School, we blend rigorous academics with
+            creative exploration to foster a love of learning that lasts a
+            lifetime.
+          </p>
+
+          <div class="button-group">
+            <button class="btn btn-primary">Apply for Admission</button>
+            <button class="btn btn-secondary">Call on WhatsApp</button>
+          </div>
+
+          <div class="social-proof">
+            <div class="avatar-group">
+              <img src="https://i.pravatar.cc/100?u=112" alt="Student" />
+              <img src="https://i.pravatar.cc/100?u=212" alt="Student" />
+              <img src="https://i.pravatar.cc/100?u=312" alt="Student" />
+              <img src="https://i.pravatar.cc/100?u=420" alt="Student" />
+            </div>
+            <div class="stats-text">
+              <strong>Join 2,400+ Students</strong>
+              <span>Already shaping their futures</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="image">
+        <div class="card-container">
+          <div class="image-wrapper">
+            <img
+              src="assets/image.png"
+              alt="Description"
+              class="card-image"
+              width="16"
+              height="24"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="stats">
+        <div class="stats-container">
+          <div class="stat-item">
+            <h2 class="stat-number">2012</h2>
+            <p class="stat-label">FOUNDED IN</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="stat-number">180+</h2>
+            <p class="stat-label">FACULTY MEMBERS</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="stat-number">2,400+</h2>
+            <p class="stat-label">STUDENTS ENROLLED</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="stat-number">50+</h2>
+            <p class="stat-label">CLUBS & ORGS</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs-section">
+        <h1 class="main-title">World Class Programs</h1>
+        <p class="main-description">
+          Explore our diverse range of academic and extracurricular offerings
+          designed to ignite passion and curiosity.
+        </p>
+
+        <div class="program-card">
+          <div class="icon-box">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              ></path>
+            </svg>
+          </div>
+
+          <h2 class="card-title">STEM Excellence</h2>
+          <p class="card-text">
+            Our world-class science and technology curriculum prepares students
+            for the future of innovation.
+          </p>
+
+          <a href="#" class="learn-more">
+            Learn More
+            <span class="arrow">›</span>
+          </a>
+        </div>
+        <div class="program-card">
+          <div class="icon-box">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16.6,20.463a1.5,1.5,0,0,1-.7-.174l-3.666-1.927a.5.5,0,0,0-.464,0L8.1,20.289a1.5,1.5,0,0,1-2.177-1.581l.7-4.082a.5.5,0,0,0-.143-.442L3.516,11.293a1.5,1.5,0,0,1,.832-2.559l4.1-.6a.5.5,0,0,0,.376-.273l1.833-3.714a1.5,1.5,0,0,1,2.69,0l1.833,3.714a.5.5,0,0,0,.376.274l4.1.6a1.5,1.5,0,0,1,.832,2.559l-2.965,2.891a.5.5,0,0,0-.144.442l.7,4.082A1.5,1.5,0,0,1,16.6,20.463Zm-3.9-2.986L16.364,19.4a.5.5,0,0,0,.725-.527l-.7-4.082a1.5,1.5,0,0,1,.432-1.328l2.965-2.89a.5.5,0,0,0-.277-.853l-4.1-.6a1.5,1.5,0,0,1-1.13-.821L12.449,4.594a.516.516,0,0,0-.9,0L9.719,8.308a1.5,1.5,0,0,1-1.13.82l-4.1.6a.5.5,0,0,0-.277.853L7.18,13.468A1.5,1.5,0,0,1,7.611,14.8l-.7,4.082a.5.5,0,0,0,.726.527L11.3,17.477a1.5,1.5,0,0,1,1.4,0Z"
+              ></path>
+            </svg>
+          </div>
+
+          <h2 class="card-title">Creative Arts</h2>
+          <p class="card-text">
+            Nurturing creativity through professional studio experiences in visual arts, music and drama.
+          </p>
+
+          <a href="#" class="learn-more">
+            Learn More
+            <span class="arrow">›</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="scripts/nav.js"></script>
+  </body>
+</html>
