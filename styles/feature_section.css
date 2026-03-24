@@ -1,0 +1,119 @@
+.curious-minds {
+    padding: 0;
+}
+
+.container {
+    background: radial-gradient(circle at 80% 20%,
+            #162a4d 0%,
+            #0a192f 45%,
+            #060c1a 100%);
+    color: var(--text-main);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.image-stack {
+    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    border-radius: 20px;
+    overflow: hidden;
+    /* Use a percentage or a smaller max-width for tiny screens */
+    width: 60%;
+    max-width: 360px;
+    height: 384px;
+    /* Reduced slightly for mobile feel */
+}
+
+.tilted-box {
+    background: #f8f9fa;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: 5%;
+    /* Reduced from 10% to keep it inside */
+    z-index: 1;
+}
+
+.main-img {
+    position: absolute;
+    right: 5%;
+    /* Reduced from 10% */
+    top: 40px;
+    z-index: 2;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Content Section --- */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 12px;
+}
+
+.description {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 12px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 12px;
+}
+
+.feature-item {
+    display: grid;
+    /* Use 'auto' for the icon so it only takes what it needs */
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    /* Top align looks better for long text */
+    gap: 15px;
+    /* Reduced gap for mobile */
+    width: 100%;
+}
+
+.feature-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.feature-item p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* --- Desktop Layout --- */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .image-stack,
+    .content {
+        flex: 1;
+    }
+
+    .image-stack {
+        height: 500px;
+    }
+
+    .content {
+        padding-left: 40px;
+    }
+}

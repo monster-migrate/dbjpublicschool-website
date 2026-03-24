@@ -1,0 +1,136 @@
+.main-footer {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /* Mobile default: 1 column */
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+/* --- Brand Section --- */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    background-color: var(--primary-blue);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.mission-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 300px;
+    margin-bottom: 24px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background-color: var(--bg-social);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.social-icon:hover {
+    background-color: #e2e8f0;
+}
+
+/* --- Headers & Links --- */
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-blue);
+}
+
+/* --- Contact Section --- */
+.contact-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+.contact-item .icon {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--link-color);
+    line-height: 1.5;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Tablet View */
+@media (min-width: 640px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+        gap: 20px;
+    }
+}

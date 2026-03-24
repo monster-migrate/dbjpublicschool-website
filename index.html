@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="styles/stats.css" />
     <link rel="stylesheet" href="styles/image_card.css" />
     <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/feature_section.css" />
+    <link rel="stylesheet" href="styles/news_section.css" />
+    <link rel="stylesheet" href="styles/cta_section.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/floating_btn.css" />
   </head>
 
   <body>
@@ -46,45 +51,53 @@
 
     <main>
       <section id="hero">
-        <div class="admission-card">
-          <p class="description">
-            At Divya Jyoti Public School, we blend rigorous academics with
-            creative exploration to foster a love of learning that lasts a
-            lifetime.
-          </p>
-
-          <div class="button-group">
-            <button class="btn btn-primary">Apply for Admission</button>
-            <button class="btn btn-secondary">Call on WhatsApp</button>
+        <div>
+          <div class="hero-text">
+            <h1>
+              Empowering the <br /><span class="text-emphasis"
+                >Next Generation</span
+              ><br />of Leaders
+            </h1>
           </div>
-
-          <div class="social-proof">
-            <div class="avatar-group">
-              <img src="https://i.pravatar.cc/100?u=112" alt="Student" />
-              <img src="https://i.pravatar.cc/100?u=212" alt="Student" />
-              <img src="https://i.pravatar.cc/100?u=312" alt="Student" />
-              <img src="https://i.pravatar.cc/100?u=420" alt="Student" />
+          <div class="admission-card">
+            <p class="description">
+              At Divya Jyoti Public School, we blend rigorous academics with
+              creative exploration to foster a love of learning that lasts a
+              lifetime.
+            </p>
+            <div class="button-group">
+              <button class="btn btn-primary">Apply for Admission</button>
+              <button class="btn btn-secondary">Call on WhatsApp</button>
             </div>
-            <div class="stats-text">
-              <strong>Join 2,400+ Students</strong>
-              <span>Already shaping their futures</span>
+            <div class="social-proof">
+              <div class="avatar-group">
+                <!-- <img src="https://i.pravatar.cc/100?u=112" alt="Student" /> -->
+                <!-- <img src="https://i.pravatar.cc/100?u=212" alt="Student" /> -->
+                <!-- <img src="https://i.pravatar.cc/100?u=312" alt="Student" /> -->
+                <!-- <img src="https://i.pravatar.cc/100?u=420" alt="Student" /> -->
+              </div>
+              <div class="stats-text">
+                <strong>Join 2,400+ Students</strong>
+                <span>Already shaping their futures</span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="image">
-        <div class="card-container">
-          <div class="image-wrapper">
-            <img
-              src="assets/image.png"
-              alt="Description"
-              class="card-image"
-              width="16"
-              height="24"
-            />
+        <section id="image">
+          <div class="card-container">
+            <div class="image-wrapper">
+              <img
+                src="assets/image.png"
+                alt="Description"
+                class="card-image"
+                width="16"
+                height="24"
+              />
+            </div>
           </div>
-        </div>
+        </section>
       </section>
+
       <section id="stats">
         <div class="stats-container">
           <div class="stat-item">
@@ -106,72 +119,395 @@
         </div>
       </section>
 
-      <section class="programs-section">
-        <h1 class="main-title">World Class Programs</h1>
-        <p class="main-description">
-          Explore our diverse range of academic and extracurricular offerings
-          designed to ignite passion and curiosity.
-        </p>
-
-        <div class="program-card">
-          <div class="icon-box">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path
-                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-              ></path>
-            </svg>
-          </div>
-
-          <h2 class="card-title">STEM Excellence</h2>
-          <p class="card-text">
-            Our world-class science and technology curriculum prepares students
-            for the future of innovation.
+      <section id="programs-section">
+        <div>
+          <h1 class="main-title">World Class Programs</h1>
+          <p class="main-description">
+            Explore our diverse range of academic and extracurricular offerings
+            designed to ignite passion and curiosity.
           </p>
-
-          <a href="#" class="learn-more">
-            Learn More
-            <span class="arrow">›</span>
-          </a>
         </div>
-        <div class="program-card">
-          <div class="icon-box">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M16.6,20.463a1.5,1.5,0,0,1-.7-.174l-3.666-1.927a.5.5,0,0,0-.464,0L8.1,20.289a1.5,1.5,0,0,1-2.177-1.581l.7-4.082a.5.5,0,0,0-.143-.442L3.516,11.293a1.5,1.5,0,0,1,.832-2.559l4.1-.6a.5.5,0,0,0,.376-.273l1.833-3.714a1.5,1.5,0,0,1,2.69,0l1.833,3.714a.5.5,0,0,0,.376.274l4.1.6a1.5,1.5,0,0,1,.832,2.559l-2.965,2.891a.5.5,0,0,0-.144.442l.7,4.082A1.5,1.5,0,0,1,16.6,20.463Zm-3.9-2.986L16.364,19.4a.5.5,0,0,0,.725-.527l-.7-4.082a1.5,1.5,0,0,1,.432-1.328l2.965-2.89a.5.5,0,0,0-.277-.853l-4.1-.6a1.5,1.5,0,0,1-1.13-.821L12.449,4.594a.516.516,0,0,0-.9,0L9.719,8.308a1.5,1.5,0,0,1-1.13.82l-4.1.6a.5.5,0,0,0-.277.853L7.18,13.468A1.5,1.5,0,0,1,7.611,14.8l-.7,4.082a.5.5,0,0,0,.726.527L11.3,17.477a1.5,1.5,0,0,1,1.4,0Z"
-              ></path>
-            </svg>
+        <div class="program-cards">
+          <div class="program-card">
+            <div class="icon-box icon-box-variant1">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+
+            <h2 class="card-title">STEM Excellence</h2>
+            <p class="card-text">
+              Our world-class science and technology curriculum prepares
+              students for the future of innovation.
+            </p>
+
+            <a href="#" class="learn-more">
+              Learn More
+              <span class="arrow">›</span>
+            </a>
+          </div>
+          <div class="program-card">
+            <div class="icon-box icon-box-variant4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16.6,20.463a1.5,1.5,0,0,1-.7-.174l-3.666-1.927a.5.5,0,0,0-.464,0L8.1,20.289a1.5,1.5,0,0,1-2.177-1.581l.7-4.082a.5.5,0,0,0-.143-.442L3.516,11.293a1.5,1.5,0,0,1,.832-2.559l4.1-.6a.5.5,0,0,0,.376-.273l1.833-3.714a1.5,1.5,0,0,1,2.69,0l1.833,3.714a.5.5,0,0,0,.376.274l4.1.6a1.5,1.5,0,0,1,.832,2.559l-2.965,2.891a.5.5,0,0,0-.144.442l.7,4.082A1.5,1.5,0,0,1,16.6,20.463Zm-3.9-2.986L16.364,19.4a.5.5,0,0,0,.725-.527l-.7-4.082a1.5,1.5,0,0,1,.432-1.328l2.965-2.89a.5.5,0,0,0-.277-.853l-4.1-.6a1.5,1.5,0,0,1-1.13-.821L12.449,4.594a.516.516,0,0,0-.9,0L9.719,8.308a1.5,1.5,0,0,1-1.13.82l-4.1.6a.5.5,0,0,0-.277.853L7.18,13.468A1.5,1.5,0,0,1,7.611,14.8l-.7,4.082a.5.5,0,0,0,.726.527L11.3,17.477a1.5,1.5,0,0,1,1.4,0Z"
+                ></path>
+              </svg>
+            </div>
+
+            <h2 class="card-title">Creative Arts</h2>
+            <p class="card-text">
+              Nurturing creativity through professional studio experiences in
+              visual arts, music and drama.
+            </p>
+
+            <a href="#" class="learn-more">
+              Learn More
+              <span class="arrow">›</span>
+            </a>
+          </div>
+          <div class="program-card">
+            <div class="icon-box icon-box-variant3">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline
+                  points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                ></polyline>
+              </svg>
+            </div>
+
+            <h2 class="card-title">Global Leadership</h2>
+            <p class="card-text">
+              Developing critical thinking and diplomatic skills through our
+              unique international exchange programs.
+            </p>
+
+            <a href="#" class="learn-more">
+              Learn More
+              <span class="arrow">›</span>
+            </a>
+          </div>
+          <div class="program-card">
+            <div class="icon-box icon-box-variant2">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon
+                  points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+                ></polygon>
+              </svg>
+            </div>
+
+            <h2 class="card-title">Athletics & Wellness</h2>
+            <p class="card-text">
+              Building character and teamwork through competitive sports and
+              holistic physical education.
+            </p>
+
+            <a href="#" class="learn-more">
+              Learn More
+              <span class="arrow">›</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="curious-minds">
+        <div class="container">
+          <div class="image-stack">
+            <div class="image-box tilted-box">
+              <div class="placeholder-icon">
+                <img src="assets/image.png" alt="Students in a classroom" />
+              </div>
+            </div>
+            <div class="image-box main-img">
+              <img src="assets/image.png" alt="Students in a classroom" />
+            </div>
           </div>
 
-          <h2 class="card-title">Creative Arts</h2>
-          <p class="card-text">
-            Nurturing creativity through professional studio experiences in visual arts, music and drama.
+          <div class="content">
+            <h2 class="title">A Home for Curious Minds</h2>
+            <p class="description">
+              We provide an environment where students feel safe to take risks,
+              fail forward, and achieve greatness.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <div class="icon-box icon-box-variant1">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0 1 16 16v288a16 16 0 0 1-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0 1 16-16c131.57.59 192 32.84 208 96zm0 0v288"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Advanced Technology</h3>
+                  <p>
+                    Equipped with state-of-the-art labs and interactive learning
+                    spaces.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="icon-box icon-box-variant1">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 640 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Personalized Support</h3>
+                  <p>
+                    Dedicated student success coaches and small class sizes.
+                  </p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <div class="icon-box icon-box-variant1">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M253.47 17.406C123.76 17.406 18.437 122.76 18.437 252.47c0 129.707 105.324 235.06 235.03 235.06 129.707 0 235.063-105.353 235.063-235.06 0-129.71-105.355-235.064-235.06-235.064zM367.874 68.75c61.246 38.19 101.97 106.14 101.97 183.72 0 17.143-1.993 33.823-5.75 49.81l-34.25-18.06 22 54.874c-9.454 21.647-22.362 41.432-38 58.687l-43.158-30.936-64.625 47.72-61.656 6.967-13.906-41.78-49.72 26.844-68.093-18.938 9.157 36.594c-28.41-21.793-51.23-50.466-66-83.563L81.25 304.47l32.25 17.124 59.22-9.875 2.843-40.908-37.344-1.718 4.905-17.844 30.78-25.313-25.093-15.625 67.22-38.593-45.345-29.657-66.625 40.187-49.437-15.28c13.812-32.14 35.21-60.22 61.906-82.064l-3.75 44.375 43.376-34.124 72 22.22-22.5-27.407L233 75.562l26.813 28.468 71 9.845-3.5-34.47 41.468 12.657-.905-23.312zm1.156 120.03L278 199.47l28.906 43.218 3.156 64.468L339.25 321l11.438-28.375 62.656 48.656L395.78 294l6.408-48.344-43.75-22.72 10.593-34.155zM221 192.438l-31.594 21.188 36.47 14.78 16.686-14.78L221 192.437zm22.188 144.688l18.687 52.594 19.78-42.564-38.467-10.03z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Diverse Community</h3>
+                  <p>
+                    A vibrant student body representing talent from across the
+                    region.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-section">
+        <div class="news-container">
+          <div class="news-header">
+            <div class="header-text">
+              <h2 class="news-title">News & Updates</h2>
+              <p class="news-subtitle">
+                Keep up with the latest happenings at Divya Jyoti Public School.
+              </p>
+            </div>
+            <a href="#" class="view-all"
+              >View All Stories <span class="arrow">→</span></a
+            >
+          </div>
+
+          <div class="news-grid">
+            <article class="news-card">
+              <div class="card-image-placeholder">
+                <i class="img-icon"></i>
+              </div>
+              <div class="card-content">
+                <p class="card-meta">
+                  <span class="category academic">ACADEMIC</span> •
+                  <span class="date">May 15, 2024</span>
+                </p>
+                <h3 class="card-title">
+                  National Science Bowl Regional Winners
+                </h3>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="card-image-placeholder">
+                <i class="img-icon"></i>
+              </div>
+              <div class="card-content">
+                <p class="card-meta">
+                  <span class="category campus">CAMPUS</span> •
+                  <span class="date">May 12, 2024</span>
+                </p>
+                <h3 class="card-title">
+                  Annual Spring Arts Festival Schedule Announced
+                </h3>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="card-image-placeholder">
+                <i class="img-icon"></i>
+              </div>
+              <div class="card-content">
+                <p class="card-meta">
+                  <span class="category athletics">ATHLETICS</span> •
+                  <span class="date">May 10, 2024</span>
+                </p>
+                <h3 class="card-title">
+                  Varsity Soccer Team Advances to State Finals
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="cta-card">
+          <h2 class="cta-title">Ready to join our community?</h2>
+          <p class="cta-text">
+            Download our prospectus or schedule a visit to see why
+            <br class="desktop-only" />
+            Divya Jyoti is the right choice for your child's future.
           </p>
 
-          <a href="#" class="learn-more">
-            Learn More
-            <span class="arrow">›</span>
-          </a>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-white">Download Prospectus</a>
+            <a href="#" class="btn btn-outline">Contact Admissions</a>
+          </div>
         </div>
       </section>
     </main>
 
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-info">
+          <div class="footer-logo">
+            <span class="logo-icon">🎓</span>
+            <h2 class="brand-name">DIVYA JYOTI SCHOOL</h2>
+          </div>
+          <p class="mission-text">
+            Empowering minds, building character, and nurturing future leaders
+            since 2012.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon">🌐</a>
+            <a href="#" class="social-icon">🌐</a>
+            <a href="#" class="social-icon">🌐</a>
+            <a href="#" class="social-icon">🌐</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">School Board</a></li>
+            <li><a href="#">Career Opportunities</a></li>
+            <li><a href="#">Alumni Network</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Information</h3>
+          <ul class="footer-links">
+            <li><a href="#">Admissions Policy</a></li>
+            <li><a href="#">Student Handbook</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Financial Aid</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-info">
+          <h3 class="footer-heading">Contact Us</h3>
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <p>
+              Divya Jyoti Public School, Laxmipur, Bhawanipatna, Kalahandi,
+              Odisha
+            </p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📞</span>
+            <p>+91 (943) 802-9010</p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <p>admissions@dibyajyoti.edu</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
     <script src="scripts/nav.js"></script>
+
+    <a
+      href="https://wa.me/yourphonenumber"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <div class="pulse"></div>
+      <i class="whatsapp-icon">
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          stroke="currentColor"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path>
+        </svg>
+      </i>
+    </a>
   </body>
 </html>

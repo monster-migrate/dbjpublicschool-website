@@ -1,3 +1,10 @@
+#programs-section{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .stats-container {
     background-color: #f9f9f9;
     display: grid;
@@ -12,10 +19,16 @@
 
 /* Desktop Styles (Screens wider than 768px) */
 @media (min-width: 768px) {
+    .program-cards{
+        padding: 32px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
     .stats-container {
         grid-template-columns: repeat(4, 1fr); /* All 4 in one row */
         gap: 20px;
     }
+    
 }
 
 /* Typography Styling */
