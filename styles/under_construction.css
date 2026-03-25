@@ -1,0 +1,142 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.status-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+/* Countdown Styles */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 3rem;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 100px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.time-box span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.time-box p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Styles */
+.notify-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+input[type="email"] {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    width: 60%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 600px) {
+    .status-title {
+        font-size: 1.8rem;
+    }
+
+    .notify-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+}
