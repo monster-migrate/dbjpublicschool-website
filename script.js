@@ -8,27 +8,27 @@ window.addEventListener('scroll', function () {
 });
 
 // smooth scroll for in page links
-document.querySelectorAll('nav a').forEach(anchor => {
-	anchor.addEventListener('click', function (e) {
-		const href = this.getAttribute('href');
+// document.querySelectorAll('nav a').forEach(anchor => {
+// 	anchor.addEventListener('click', function (e) {
+// 		const href = this.getAttribute('href');
 
-		// Check if the link is an internal anchor (starts with #)
-		if (href && href.startsWith('#')) {
-			e.preventDefault(); // Stop the page from jumping
+// 		// Check if the link is an internal anchor (starts with #)
+// 		if (href && href.startsWith('#')) {
+// 			e.preventDefault(); // Stop the page from jumping
 
-			const section = document.querySelector(href);
-			if (section) {
-				section.scrollIntoView({ behavior: 'smooth' });
+// 			const section = document.querySelector(href);
+// 			if (section) {
+// 				section.scrollIntoView({ behavior: 'smooth' });
 
-				// Optional: Close mobile menu after clicking
-				const mobileMenu = document.getElementById('mobileMenu');
-				if (mobileMenu) {
-					mobileMenu.classList.remove('open'); // Adjust class name to match your CSS
-				}
-			}
-		}
-		// If it doesn't start with # (like academics.html), 
-		// the browser will follow the link naturally.
-	});
-});
+// 				// Optional: Close mobile menu after clicking
+// 				const mobileMenu = document.getElementById('mobileMenu');
+// 				if (mobileMenu) {
+// 					mobileMenu.classList.remove('open'); // Adjust class name to match your CSS
+// 				}
+// 			}
+// 		}
+// 		// If it doesn't start with # (like academics.html), 
+// 		// the browser will follow the link naturally.
+// 	});
+// });
 
