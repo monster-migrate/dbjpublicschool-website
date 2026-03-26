@@ -1,6 +1,5 @@
   .cta-section {
     padding: 40px 20px;
-    background-color: var(--cta-blue); /* Light page background */
     display: flex;
     justify-content: center;
   }
